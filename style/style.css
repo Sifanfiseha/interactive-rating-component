@@ -1,0 +1,125 @@
+:root {
+    /* Primary */
+
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Dark-Blueb: hsl(213, 19%, 24%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Light-Grey);
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    font-size: 15px;
+}
+.conainer {
+    background-color: var(--Dark-Blue);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 350px;
+}
+
+.thank-container {
+    background-color: var(--Dark-Blue);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 350px;
+    align-items: center;
+}
+.hidden {
+    display: none;
+}
+.thank-container img {
+    width: 200px;
+}
+.thank-container p {
+    text-align: center;
+}
+p {
+    line-height: 1.6;
+}
+.sel {
+    padding: 0.2rem 1rem;
+    color: var(--Orange);
+    background-color: var(--Dark-Blueb);
+    border-radius: 30px;
+}
+button {
+    background-color: var(--Orange);
+    padding: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 30px;
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+button:hover {
+    background-color: var(--White);
+}
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.num {
+    background-color: var(--Dark-Blueb);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.num:hover {
+    background-color: var(--White);
+    color: var(--Very-Dark-Blue);
+}
+.active {
+    background-color: var(--Orange);
+}
+h2 {
+    color: var(--White);
+}
+
+.star {
+    padding: 0.6rem;
+    /* background-color: var(--Light-Grey); */
+    background-color: var(--Dark-Blueb);
+    border-right: 50%;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+@media (min-width: 375px) {
+    .conainer {
+        padding: 2rem;
+    }
+}
